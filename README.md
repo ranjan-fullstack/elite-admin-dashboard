@@ -7,7 +7,7 @@ This project demonstrates real-world authentication architecture, protected rout
 
 ## 🌐 Live Demo
 
-🔗 https://your-vercel-url.vercel.app
+🔗 https://elite-admin-dashboard-mu.vercel.app/
 
 ---
 
