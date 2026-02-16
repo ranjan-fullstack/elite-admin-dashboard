@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #0f172a;
+}
+
+.login-wrapper {
+  height: 100vh;
+  display: flex;
+  background: radial-gradient(circle at top left, #4f46e5, #0f172a);
+  overflow: hidden;
+}
+
+.login-left {
+  flex: 1;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px;
+  animation: fadeIn 1s ease;
+}
+
+.login-left h1 {
+  font-size: 44px;
+  margin-bottom: 20px;
+}
+
+.login-left p {
+  font-size: 16px;
+  opacity: 0.85;
+  max-width: 400px;
+}
+
+.login-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-card {
+  width: 380px;
+  padding: 40px;
+  border-radius: 16px;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+  color: white;
+  animation: slideUp 0.8s ease;
+}
+
+.login-card h2 {
+  margin-bottom: 25px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.login-input-group {
+  margin-bottom: 18px;
+}
+
+.login-input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  transition: 0.3s;
+}
+
+.login-input::placeholder {
+  color: #ccc;
+}
+
+.login-input:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.login-button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(90deg, #6366f1, #8b5cf6);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(99, 102, 241, 0.4);
+}
+
+.login-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error-message {
+  background: rgba(255, 0, 0, 0.15);
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 13px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.login-footer {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(40px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
